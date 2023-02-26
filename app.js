@@ -195,9 +195,12 @@ Student.prototype.scopeArrow = () => console.log(this);
 joe.scopeArrow();
 
 // TODO: Write a COMMENT below to answer the following questions.
+
 // 1. What is "this" when joe.scope() is invoked?
 //  This refers to the Joe Schmoe student object created by the constructor.
+
 // 2. What is "this" when joe.scopeArrow() is invoked?
 // The global object, since arrow functions don't play well with constructors.
+
 // 3. Explain why "this" is different when an arrow function is used.
 // When an arrow function is used for a method it doesn't work, because the arrow function doesn't have it's own 'this.'  When it tries to 'this' it ends up referring to the global object, or window.
